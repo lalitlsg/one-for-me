@@ -9,7 +9,7 @@ const Home = () => {
         logo={developer}
         h1={"It's Time To Get Your Business Online"}
         h2={"Create Website For Your Business With"}
-        brandName={"OneForMe.com"}
+        brandName={"OneForMe"}
         btnText={"Contact Us"}
         name={"home"}
       />
