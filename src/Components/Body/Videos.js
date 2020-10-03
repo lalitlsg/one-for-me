@@ -29,6 +29,7 @@ const Videos = () => {
             <Col xs={12} sm={4} key={key} className="mb-3">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={value.link}
                 style={{ textDecoration: "none" }}
               >

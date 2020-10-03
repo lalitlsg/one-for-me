@@ -39,16 +39,16 @@ const HomeAboutCommon = props => {
       <Row style={{ marginTop: "10%" }}>
         <Col
           xs={12}
-          sm={{ span: 5, order: props.name == "about" ? "last" : "first" }}
+          sm={{ span: 5, order: props.name === "about" ? "last" : "first" }}
         >
           <img src={props.logo} alt="developer" className="img-developer" />
         </Col>
         <Col
           xs={12}
-          sm={{ span: 5, order: props.name == "about" ? "first" : "last" }}
+          sm={{ span: 5, order: props.name === "about" ? "first" : "last" }}
           className="mx-auto mt-2"
         >
-          {props.name == "about" ? (
+          {props.name === "about" ? (
             <img
               src={profile}
               alt="profile"
@@ -64,21 +64,21 @@ const HomeAboutCommon = props => {
 
           <h1
             className="first-heading"
-            style={{ textAlign: props.name == "about" ? "center" : null }}
+            style={{ textAlign: props.name === "about" ? "center" : null }}
           >
             {props.h1}
           </h1>
           <h3
             className="my-3 second-heading"
-            style={{ textAlign: props.name == "about" ? "center" : null }}
+            style={{ textAlign: props.name === "about" ? "center" : null }}
           >
             <span> {props.h2} </span>
             <span style={{ color: "#9acd32" }}>{props.brandName}</span>
           </h3>
-          {props.name == "home" ? (
+          {props.name === "home" ? (
             <button
               className="btn-contact-us"
-              style={{ left: props.name == "about" ? "33%" : null }}
+              style={{ left: props.name === "about" ? "33%" : null }}
               onClick={contact}
             >
               {props.btnText}
