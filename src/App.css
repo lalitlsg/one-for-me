@@ -1,38 +1,241 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.btn-contact-us {
+  border-radius: 50px;
+  width: 150px;
+  line-height: 50px;
+  background-color: white;
+  color: #9acd32;
+  border: 1px solid;
+  transition: 1s;
+  position: absolute;
+  left: 65%;
+  margin: 10px auto;
+}
+
+.btn-contact-us:hover {
+  background: #9acd32;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.img-developer {
+  width: 90%;
+  height: 90%;
+  animation: developer 3s ease-in infinite alternate both;
 }
 
-@keyframes App-logo-spin {
+.first-heading {
+  font-size: 40px;
+  text-align: right;
+}
+
+.second-heading {
+  font-size: 30px;
+  text-align: right;
+}
+
+.logo-ofm {
+  width: 300px;
+}
+
+.logo-ofm:hover {
+  cursor: pointer;
+}
+
+.nav-div {
+  float: right;
+  flex-direction: row !important;
+}
+
+.link {
+  box-sizing: border-box;
+  width: 100px;
+  text-align: center;
+  border-top: 1px solid #9acd32;
+  border-radius: 50px;
+  color: #9acd32 !important;
+  transition: 1s;
+  margin-left: 5px;
+}
+
+.link:hover {
+  background-color: #9acd32;
+  color: white !important;
+  cursor: pointer;
+}
+
+.link-active {
+  background-color: #9acd32;
+  color: white !important;
+}
+
+.title {
+  background-color: #9acd32;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.video-card {
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  background-color: #9acd32;
+}
+
+.footer-div {
+  background-color: #9acd32;
+  width: 100%;
+  height: 5px;
+  margin-top: 5%;
+  border-radius: 50px;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social > a {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.social-logo {
+  transition: 1s;
+}
+.social-logo:hover {
+  width: 60px;
+  height: 60px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 7px 7px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #9acd32;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  color: #9acd32;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #9acd32;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+input[type="submit"]:hover {
+  background-color: #9acd32;
+  color: white;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #9acd32;
+  text-align: center;
+}
+
+.formimg {
+  width: 90%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #9acd32;
+  text-align: center;
+  position: absolute;
+  top: -150%;
+  animation: sent 3s ease-in forwards;
+}
+
+@keyframes developer {
   from {
-    transform: rotate(0deg);
+    transform: translateY(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(30px);
+  }
+}
+
+@keyframes sent {
+  from {
+    top: -150%;
+  }
+  to {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .formimg {
+    width: 90%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #9acd32;
+    text-align: center;
+    position: absolute;
+    margin-bottom: 20px;
+    left: -150%;
+    animation: sent 3s ease-in forwards;
+  }
+
+  @keyframes sent {
+    from {
+      left: -150%;
+    }
+    to {
+      left: 5%;
+    }
+  }
+
+  .first-heading {
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .second-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+  .logo-ofm {
+    width: 195px;
+  }
+  .btn-contact-us {
+    left: 30%;
+    line-height: 40px;
+  }
+  .link {
+    width: 70px;
+    text-align: center;
+  }
+  .nav-div {
+    margin-top: 10px;
   }
 }
