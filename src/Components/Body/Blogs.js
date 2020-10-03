@@ -38,6 +38,7 @@ const Blogs = () => {
             <Col xs={12} sm={4} key={key}>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={value.link}
                 style={{ textDecoration: "none" }}
               >
