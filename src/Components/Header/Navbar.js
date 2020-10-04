@@ -24,8 +24,8 @@ const NavbarComponent = () => {
                 <LinkContainer to="/blogs" activeClassName="link-active">
                   <NavItem className="link">Blogs</NavItem>
                 </LinkContainer>
-                <LinkContainer to="/videos" activeClassName="link-active">
-                  <NavItem className="link">Videos</NavItem>
+                <LinkContainer to="/work" activeClassName="link-active">
+                  <NavItem className="link">My Work</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/about" activeClassName="link-active">
                   <NavItem className="link">About</NavItem>
