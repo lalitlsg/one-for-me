@@ -6,7 +6,7 @@ const videos = [
   {
     title: "Parking App",
     info:
-      "Manage parking in your organization.You can park the vehicle show the status of available slots and remove the vehicle by applying some charges based on 1Rs/min",
+      "Manage parking of vehicles in your organization.You can park the vehicle, show the status of available slots and remove the vehicle by applying some charges based on 1Rs/min",
     link: "https://parking-e486e.web.app"
   },
   {
