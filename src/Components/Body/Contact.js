@@ -52,6 +52,7 @@ const Contact = () => {
                 id="name"
                 name="name"
                 placeholder="Your Name"
+                className="submit"
               />
 
               <input
@@ -60,6 +61,7 @@ const Contact = () => {
                 id="email"
                 name="email"
                 placeholder="Your Email"
+                className="submit"
               />
 
               <input
@@ -68,16 +70,19 @@ const Contact = () => {
                 id="subject"
                 name="subject"
                 placeholder="Your Subject"
+                className="submit"
               />
 
               <textarea
+                style={{ marginTop: "5px" }}
                 required
                 id="message"
                 name="message"
                 placeholder="Your Message"
+                className="submit"
               />
 
-              <input type="submit" value="Submit" />
+              <input type="submit" value="Submit" className="submit" />
             </form>
           </div>
         </Col>

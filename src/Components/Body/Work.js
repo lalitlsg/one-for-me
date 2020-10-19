@@ -36,7 +36,7 @@ const Videos = () => {
                 href={value.link}
                 style={{ textDecoration: "none" }}
               >
-                <Card style={{ height: "90%" }} className="video-card my-3">
+                <Card style={{ height: "90%" }} className="card my-3">
                   <Card.Body>
                     <Card.Title className="title">{value.title}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">

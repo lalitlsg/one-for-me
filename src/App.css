@@ -22,11 +22,13 @@ body {
   position: absolute;
   left: 65%;
   margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-contact-us:hover {
   background: #9acd32;
   color: white;
+  bottom: 3px;
 }
 
 .img-developer {
@@ -67,6 +69,7 @@ body {
   color: #9acd32 !important;
   transition: 1s;
   margin-left: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .link:hover {
@@ -87,8 +90,24 @@ body {
   border-radius: 10px;
 }
 
-.video-card {
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  bottom: 0;
+}
+
+.submit {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
+  bottom: 0;
+}
+
+.submit:hover {
+  bottom: 5px;
+}
+
+.card:hover {
+  bottom: 10px;
 }
 
 .button {
@@ -96,6 +115,7 @@ body {
   top: 90%;
   left: 75%;
   background-color: #9acd32;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer-div {
@@ -166,6 +186,7 @@ input[type="submit"]:hover {
   padding: 20px;
   border: 1px solid #9acd32;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .formimg {

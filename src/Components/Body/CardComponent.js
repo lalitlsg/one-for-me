@@ -5,7 +5,7 @@ import "../../App.css";
 const CardComponent = props => {
   return (
     <>
-      <Card className="bg-light text-dark my-3">
+      <Card className="bg-light text-dark my-3 card">
         <Card.Body>
           <Card.Title className="title">{props.title}</Card.Title>
           <Card.Text>{props.info}</Card.Text>
