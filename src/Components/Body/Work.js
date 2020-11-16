@@ -20,6 +20,12 @@ const videos = [
     info:
       "Len-Den is an app which keeps the track of all your money with your friends,like how much you have to give them and how much you have to take from them.It can also used in shops to keep track of customer's money who buy item and pay later",
     link: "https://lenden-68143.web.app/#/"
+  },
+  {
+    title: "@lalitlsg",
+    info:
+      "New Portfolio site,fully resoponsive and animated using styled components and CSS flexbox and dark theme feature",
+    link: "https://unruffled-boyd-62e355.netlify.app/"
   }
 ];
 
